@@ -6,7 +6,7 @@ RUN curl -o app.zip -L "http://192.168.1.77:8081/repository/achatfront/achatconf
     unzip -o app.zip -d /usr/share/nginx/html && \
     rm app.zip
 
-RUN curl -o nginx.conf -L "http://192.168.1.77:8081/repository/achatfront/achatconfig/nginx-config/1. 0/nginx-config-1.0" && \
+RUN curl -o nginx.conf -L "http://192.168.1.77:8081/repository/achatfront/achatconfig/nginx-config/1.0/nginx-config-1.0" && \
     mv nginx.conf /etc/nginx/conf.d/nginx.conf
 
 RUN rm /etc/nginx/conf.d/default.conf
